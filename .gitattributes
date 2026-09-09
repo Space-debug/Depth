@@ -1,0 +1,87 @@
+# 自动检测文本文件，统一使用 LF
+* text=auto
+
+# 常见代码文件强制使用 LF
+*.py text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+*.jsx text eol=lf
+*.tsx text eol=lf
+*.c text eol=lf
+*.cpp text eol=lf
+*.h text eol=lf
+*.hpp text eol=lf
+*.go text eol=lf
+*.rs text eol=lf
+*.java text eol=lf
+*.sh text eol=lf
+*.bash text eol=lf
+*.zsh text eol=lf
+*.fish text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.toml text eol=lf
+*.xml text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.scss text eol=lf
+*.sass text eol=lf
+*.sql text eol=lf
+*.R text eol=lf
+*.r text eol=lf
+*.m text eol=lf
+*.mm text eol=lf
+
+# 子模块特殊处理：强制 LF（覆盖子模块的设置）
+ultralytics/** text eol=lf
+CSPN/** text eol=lf
+
+# 脚本文件必须是 LF（否则在 Linux 上无法执行）
+*.sh text eol=lf
+*.bash text eol=lf
+
+# Makefile 必须是 LF
+Makefile text eol=lf
+makefile text eol=lf
+*.mk text eol=lf
+
+# Windows 批处理文件必须保持 CRLF（可选，建议保留）
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 二进制文件（Git 不转换）
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg binary
+*.pdf binary
+*.zip binary
+*.tar.gz binary
+*.tgz binary
+*.so binary
+*.dll binary
+*.exe binary
+*.pyc binary
+*.pyo binary
+*.pyd binary
+*.db binary
+*.sqlite binary
+*.sqlite3 binary
+*.pkl binary
+*.pickle binary
+*.h5 binary
+*.onnx binary
+*.pt binary
+*.pth binary
+*.weights binary
+*.bin binary
+*.mp4 binary
+*.avi binary
+*.mov binary
+*.mp3 binary
+*.wav binary
