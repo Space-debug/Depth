@@ -1,0 +1,146 @@
+# ============================
+# Python 通用
+# ============================
+# 字节码缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 分发 / 打包
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 虚拟环境
+venv/
+env/
+ENV/
+.venv
+.env
+
+# 测试和覆盖率
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# ============================
+# 数据文件（大文件不提交）
+# ============================
+*.h5
+*.onnx
+*.pt
+*.pth
+*.weights
+*.bin
+*.pickle
+*.pkl
+*.db
+*.sqlite
+*.sqlite3
+
+# 数据集（如果本地有）
+data/
+datasets/
+images/
+videos/
+*.mp4
+*.avi
+*.mov
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+
+# ============================
+# 日志和临时文件
+# ============================
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ============================
+# IDE 和编辑器
+# ============================
+.vscode/
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# ============================
+# 子模块相关（不忽略子模块目录本身）
+# ============================
+# 注意：不要忽略 ultralytics/ 和 CSPN/，
+# 因为它们是子模块，由 .gitmodules 管理。
+# 但子模块内部的临时文件由其自己的 .gitignore 控制。
+# 此处可以忽略子模块内的某些本地文件（可选）
+# ultralytics/.DS_Store
+# CSPN/.DS_Store
+
+# ============================
+# 项目特定
+# ============================
+# 如果你有配置文件包含敏感信息
+*.local
+*.secret
+config.local.py
+.env.local
+
+# 如果使用 Docker
+.dockerignore
+*.pid
+
+# 如果使用 wandb / mlflow
+wandb/
+mlruns/
+
+# 如果使用 tensorboard
+runs/
+logs/
+
+# 如果使用 pytest 或 unittest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ============================
+# 操作系统
+# ============================
+.DS_Store
+Thumbs.db
+*.exe
+*.dll
+*.so
+*.dylib
