@@ -1,3 +1,6 @@
 [submodule "ultralytics"]
 	path = ultralytics
 	url = https://github.com/ultralytics/ultralytics.git
+[submodule "CSPN"]
+	path = CSPN
+	url = https://github.com/XinJCheng/CSPN.git
